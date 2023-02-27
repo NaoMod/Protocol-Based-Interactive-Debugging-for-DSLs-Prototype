@@ -4,3 +4,6 @@
 [submodule "Configurable-Debugger"]
 	path = Configurable-Debugger
 	url = git@github.com:NaoMod/Configurable-Debugger.git
+[submodule "Configurable-Debugger-VSCode-Extension"]
+	path = Configurable-Debugger-VSCode-Extension
+	url = git@github.com:NaoMod/Configurable-Debugger-VSCode-Extension.git
