@@ -1,3 +1,6 @@
 [submodule "runtimes/State-Machines"]
 	path = runtimes/State-Machines
 	url = git@github.com:NaoMod/State-Machines.git
+[submodule "Configurable-Debugger"]
+	path = Configurable-Debugger
+	url = git@github.com:NaoMod/Configurable-Debugger.git
