@@ -1,0 +1,3 @@
+[submodule "runtimes/State-Machines"]
+	path = runtimes/State-Machines
+	url = git@github.com:NaoMod/State-Machines.git
