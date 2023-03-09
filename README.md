@@ -8,7 +8,7 @@ Prototype for the research paper 'Protocol-Based Interactive Debugging for Domai
 > 
 > `git clone --recurse-submodules https://github.com/NaoMod/Protocol-Based-Interactive-Debugging-for-DSLs-Prototype`
 >
-> A module refers to a specific commit in a repository. If you want to visit the repository of a module, please make sure to access it by clicking on their folders on Github; this will lead you to the correct commit in the target repository.
+> A module refers to a specific commit in a repository. If you want to visit the repository of a module, please make sure to access it by clicking on their folders on GitHub; this will lead you to the correct commit in the target repository.
 
 
 ## Structure Overview
@@ -36,6 +36,12 @@ Then, run the *Launch Configurable Debugger* configuration.
 
 Finally, run the *Launch Configurable Debug Extension* configuration. This will start a new instance of VSCode in which our configurable debugger can be used.
 
+> **Warning**
+> 
+> For unknown reasons, an exception is launched when our extension is started.
+> Before running the *Launch Configurable Debug Extension* configuration, open the 'Breakpoints' tab present at the bottom of the *Run and Debug* view. If this tab is not present, click on the dots symbol in the top right corner of the *Run and Debug* view and select it. Simply make sure the box 'Uncaught Exceptions' is unchecked.
+> ![Uncaught Exceptions breakpoint](images/extension_exception.png)
+
 
 ## Debugging a Sample Program
 
@@ -54,13 +60,13 @@ As in the previous section, a dropdown menu allows you to select which program y
 
 ### Using Debugging Features
 
-When the debug session is paused, the *Variables* tab in the *Run and Debug* view is populated. In the case of our extension, both the AST and Runtime State of the running program are available. You can browse the different elements by clicking on them to expand their content.
+When the debug session is paused, the 'Variables' tab in the *Run and Debug* view is populated. In the case of our extension, both the AST and Runtime State of the running program are available. You can browse the different elements by clicking on them to expand their content.
 
-The call stack tab shows the running threads as well as the reason for the pause. In our extension, a program is always running in a single thread. When starting a debug session for one of the sample programs, notice that the pause reason is "Paused on entry". This reason will be different when a pause occurs because a breakpoint is activated or a pause is manually triggered by the user.
+The 'Call Stack' tab shows the running threads as well as the reason for the pause. In our extension, a program is always running in a single thread. When starting a debug session for one of the sample programs, notice that the pause reason is "Paused on entry". This reason will be different when a pause occurs because a breakpoint is activated or a pause is manually triggered by the user.
 
-The breakpoints tab shows the source breakpoints currently assigned to the source file. In our extension, these source breakpoints are translated to domain-specific breakpoints depending on the syntax element they are attached to. Only inline breakpoints (i.e., breakpoints that specify a line AND a column) are usable in our extension. To put a new inline breakpoint, right-click at the desired location in the source file and select *Add inline breakpoint*. A new item should appear in the breakpoint view.
+The 'Breakpoints' tab shows the source breakpoints currently assigned to the source file. In our extension, these source breakpoints are translated to domain-specific breakpoints depending on the syntax element they are attached to. Only inline breakpoints (i.e., breakpoints that specify a line AND a column) are usable in our extension. To put a new inline breakpoint, right-click at the desired location in the source file and select *Add inline breakpoint*. A new item should appear in the breakpoint view.
 
-Finally, the domain-specific breakpoints tab shows the different semantics that are available for breakpoints. They are classified in two categories: the ones that are currently enabled or not. To enable a breakpoint type that is currently disabled, click on the "+" symbol that appears when hovering over the item. More details about the breakpoint types available for each language runtime is available on their respective repository.
+Finally, the 'Domain-Specific Breakpoints' tab shows the different semantics that are available for breakpoints. They are classified in two categories: the ones that are currently enabled or not. To enable a breakpoint type that is currently disabled, click on the "+" symbol that appears when hovering over the item. More details about the breakpoint types available for each language runtime is available on their respective repository.
 
 If one of the tabs is not present, click on the dots symbol in the top right corner of the *Run and Debug* view and select the missing tabs.
 
