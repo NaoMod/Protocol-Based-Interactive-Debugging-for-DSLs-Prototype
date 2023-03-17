@@ -70,6 +70,15 @@ Finally, the 'Domain-Specific Breakpoints' tab shows the different semantics tha
 
 If one of the tabs is not present, click on the dots symbol in the top right corner of the *Run and Debug* view and select the missing tabs.
 
+To put an inline breakpoint in a program using VSCode, two options are possible:
+
+- Put your cursor at the desired location for the inline breakpoint in the program. Then, go to the menu bar at the top of the window and click on *Run > New Breakpoint > Inline Breakpoint*. This can be done even when a debug session is not active for the program.
+- Right-click at the desired location for the inline breakpoint in the program. Then, select *Add Inline Breakpoint*. This can ONLY be done when a debug session is active for the program.
+
+During a debug session, a successfully set breakpoint will result in a red dot at the desired location.
+
+![Succesfully set breakpoint](images/example_breakpoint.png)
+
 During a debug session, a toolbar becomes visible and allows triggering [debug actions](https://code.visualstudio.com/Docs/editor/debugging#_debug-actions).
 Here's a list of the effect of each debug action in the context of our extension:
 
