@@ -4,7 +4,6 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
         {
             "type": "java",
             "name": "Launch MiniTL Runtime",
@@ -15,6 +14,7 @@
             "name": "Launch State Machines Runtime",
             "type": "python",
             "request": "launch",
+            "python": "${workspaceFolder}/runtimes/State-Machines/.venv/bin/python3",
             "program": "${workspaceFolder}/runtimes/State-Machines/src/__main__.py",
             "console": "integratedTerminal",
             "args": [
