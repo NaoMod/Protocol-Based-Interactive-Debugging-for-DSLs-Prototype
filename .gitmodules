@@ -10,3 +10,6 @@
 [submodule "Configurable-Debugger-Protocols-Specification"]
 	path = Configurable-Debugger-Protocols-Specification
 	url = git@github.com:NaoMod/Configurable-Debugger-Protocols-Specification.git
+[submodule "runtimes/MiniTL"]
+	path = runtimes/MiniTL
+	url = git@github.com:NaoMod/MiniTL.git
