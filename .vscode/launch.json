@@ -5,12 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "Launch MiniTL Runtime",
-            "request": "launch",
-            "mainClass": ""
-        },
-        {
             "name": "Launch State Machines Runtime",
             "type": "python",
             "request": "launch",
